@@ -1,0 +1,11 @@
+:root {
+    --scarlet-rush: #db2b39ff;
+    --shadow-grey: #212738ff;
+    --lemon-lime: #d1d646ff;
+    --platinum: #edf2efff;
+    --sky-aqua: #57c4e5ff;
+}
+
+body {
+    background-color: var(--scarlet-rush);
+}
