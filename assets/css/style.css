@@ -1,11 +1,214 @@
 :root {
-    --scarlet-rush: #db2b39ff;
-    --shadow-grey: #212738ff;
-    --lemon-lime: #d1d646ff;
-    --platinum: #edf2efff;
-    --sky-aqua: #57c4e5ff;
+    --primary: #276FBF;
+    --secondary: #AF5B5B;
+    --background: #F6F4F3;
+    --text: #183059;
+    --accent: #F03A47;
 }
 
 body {
-    background-color: var(--scarlet-rush);
+    background-color: var(--background);
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+p {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+.logo,
+.project-title,
+a {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+}
+
+.bg-navbar {
+    background-color: var(--background);
+}
+
+.main-navbar {
+    padding-left: 150px;
+    padding-right: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.home-word-text {
+    color: var(--background);
+}
+
+.home-word-primary {
+    color: var(--accent);
+}
+
+#portfolio-nav-links .nav-item a {
+    color: var(--primary);
+}
+
+#portfolio-nav-links .nav-item a:hover,
+#portfolio-nav-links .nav-item a:focus,
+#portfolio-nav-links .nav-item a:active {
+    color: var(--text);
+}
+
+.word-text {
+    color: var(--text);
+}
+
+.word-primary {
+    color: var(--primary);
+}
+
+.content-row {
+    min-height: 700px;
+}
+
+.content-row-projects {
+    min-height: 900px;
+    height: auto;
+}
+
+.bg-home {
+    background: linear-gradient(135deg, #276fbf 0%, #183059 100%);
+}
+
+/* Portfolio card */
+.portfolio-item {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+
+
+    overflow: hidden;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 22px rgba(18, 38, 58, 0.22);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(18, 38, 58, 0.3);
+}
+
+/*
+The HTML contains an inner .row around the image and card body.
+display: contents lets those two children participate directly
+in the card's two-row grid.
+*/
+.portfolio-card-row {
+    display: contents;
+}
+
+/* Image row */
+.portfolio-image {
+    width: 100%;
+    height: 300px;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* Text row */
+.portfolio-item .card-body {
+    width: 100%;
+    height: 100px;
+    min-width: 0;
+    min-height: 0;
+    padding: 0.75rem 1rem;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+
+.portfolio-item .card-text {
+    margin: 0;
+    padding: 0;
+    line-height: 1.35;
+}
+
+.portfolio-link {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus,
+.portfolio-link:active {
+    color: var(--primary);
+}
+
+.skill-item {
+    width: 100%;
+    min-height: 100px;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+
+
+    overflow: hidden;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 22px rgba(18, 38, 58, 0.22);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.035em;
+    font-size: 0.85rem;
+}
+
+.progress-item {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bg-custom-progress {
+  background-color: var(--primary);
+}
+
+.bg-d {
+    background-color: red;
 }

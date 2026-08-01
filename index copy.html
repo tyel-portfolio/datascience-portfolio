@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <!-- custom stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5 mb-5 main-row">
+
+            <!-- Sidebar -->
+            <div class="col-3 bg-t p-0">
+                <div class="row g-0 logo-row">
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <img src="assets/images/logo.png" alt="Logo" class="logo-image">
+                    </div>
+                </div>
+
+                <div class="row g-0 navbar-row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <nav id="portfolio-nav" class="nav flex-column text-center w-100 px-3">
+                            <a class="nav-link rounded" href="#home">&lt;/Home&gt;</a>
+                            <a class="nav-link rounded" href="#aboutme">&lt;/AboutMe&gt;</a>
+                            <a class="nav-link rounded" href="#projects">&lt;/Portfolio&gt;</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="col-9 bg-a p-0">
+                <div data-bs-spy="scroll" data-bs-target="#portfolio-nav" data-bs-smooth-scroll="true"
+                    class="scrollspy-portfolio" tabindex="0">
+                    <section id="home" class="row g-0 content-row">
+                        <div class="col-12 p-4">
+                            <p class="clearfix xx">
+                                <img src="assets/images/data-science.png" alt="Data science"
+                                    class="float-start me-3 mb-2 home-image">
+
+                                I'm drawn to data science because the same core questions show up everywhere once you
+                                start looking for them. Who is likely to stop buying, what's driving a health outcome,
+                                which products tend to get purchased together, what separates a bestseller from a book
+                                that never finds an audience. Different industries, same underlying work: pulling a real
+                                signal out of data that's rarely clean or complete.
+                                <br><br>
+                                That range is intentional. Working as a Junior Engineer at a large retail company gave
+                                me an early, practical sense of how much value sits in transaction and customer data
+                                that nobody has had time to fully explore. But I didn't want my coursework to only
+                                mirror what I see at my job, so I pushed myself toward problems outside retail too:
+                                predicting diabetes risk from health survey data, classifying fake news articles by
+                                their language patterns, comparing NBA players by position, and studying childcare
+                                pricing trends across the country. Each one demanded a slightly different approach, and
+                                together they taught me more than staying in one lane would have.
+                                <br><br>
+                                My M.S. in Data Science at Bellevue University gave me the foundation to move between
+                                these problems with some confidence. Courses like Statistics for Data Science and Data
+                                Exploration and Analysis trained me to interrogate a dataset before trusting it. Data
+                                Preparation and Data Mining showed how much unglamorous work happens before a model ever
+                                gets built. Predictive Analytics and Applied Data Science tied that groundwork to real
+                                forecasting and classification problems, and Data Presentation and Visualization kept
+                                reminding me that an insight is only useful if someone outside the analysis can
+                                understand it.
+                                <br><br>
+                                The projects below are where all of that came together, from retail-specific work to
+                                problems in health, publishing, and sports.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section id="aboutme" class="row g-0 content-row">
+                        <div class="col-12 p-4">
+                            <div class="row">
+                                <div
+                                    class="col-6 d-flex flex-column justify-content-center align-items-center text-center">
+                                    <h4>Tye Leonard</h4>
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo non
+                                        arcu facilisis tincidunt. Sed at neque vel sapien luctus posuere. Donec euismod,
+                                        nisl eget consequat feugiat, augue mauris volutpat erat, vitae gravida nunc
+                                        justo. Hello
+                                    </p>
+
+                                    <div class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-envelope-fill me-2"></i>
+                                        <span>leonard.ty89@gmail.com</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-github me-2"></i>
+                                        <span>https://github.com/tyel-portfolio</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <img src="assets/images/large-logo.png" alt="Large Logo" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="projects" class="content-row">
+                        <div class="container text-center">
+                            <div class="row g-4">
+
+                                <!-- Project 1 -->
+                                <div class="col-12 col-md-6">
+                                    <div class="card portfolio-item">
+                                        <img src="assets/images/fake-news-finder.png" class="card-img-top"
+                                            alt="Fake News Finder">
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <a href="#" class="portfolio-link">
+                                                    Fake News Finder
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 2 -->
+                                <div class="col-12 col-md-6">
+                                    <div class="card portfolio-item">
+                                        <img src="assets/images/disease-risk-modeling.png" class="card-img-top"
+                                            alt="Disease Risk Modeling">
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <a href="#" class="portfolio-link">
+                                                    Disease Risk Modeling
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 3 -->
+                                <div class="col-12 col-md-6">
+                                    <div class="card portfolio-item">
+                                        <img src="assets/images/analyzing-best-selling-books.png" class="card-img-top"
+                                            alt="Analyzing Best Selling Books">
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <a href="#" class="portfolio-link">
+                                                    Analyzing Best Selling Books
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 4 -->
+                                <div class="col-12 col-md-6">
+                                    <div class="card portfolio-item">
+                                        <img src="assets/images/analyzing-childcare-prices.png" class="card-img-top"
+                                            alt="Analyzing Childcare Prices">
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <a href="#" class="portfolio-link">
+                                                    Analyzing Childcare Prices
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 5 -->
+                                <div class="col-12 col-md-6">
+                                    <div class="card portfolio-item">
+                                        <img src="assets/images/an-exploratory-analysis-by-position-and-season.png"
+                                            class="card-img-top"
+                                            alt="NBA players exploratory analysis by position and season">
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <a href="#" class="portfolio-link">
+                                                    NBA Players: An Exploratory Analysis by Position and Season
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 6 -->
+                                <div class="col-12 col-md-6">
+                                    <div class="card portfolio-item">
+                                        <img src="assets/images/book-recommendation-engine.png" class="card-img-top"
+                                            alt="Book Recommendation Engine">
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <a href="#" class="portfolio-link">
+                                                    Book Recommendation Engine
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 7 -->
+                                <div class="col-12 col-md-6">
+                                    <div class="card portfolio-item">
+                                        <img src="..." class="card-img-top" alt="Placeholder project">
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <a href="#" class="portfolio-link">
+                                                    Placeholder
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 8 -->
+                                <div class="col-12 col-md-6">
+                                    <div class="card portfolio-item">
+                                        <img src="..." class="card-img-top" alt="Placeholder project">
+
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                                <a href="#" class="portfolio-link">
+                                                    Placeholder
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
